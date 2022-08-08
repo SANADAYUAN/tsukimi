@@ -81,6 +81,16 @@ section .title h3{
 article{
     width: 100%;
     max-width: 1920px;
+    background-image: url(../img/home/moon.png),
+                      url(../img/home/tree4.png),
+                      url(../img/home/mountain.png);
+    background-repeat: no-repeat;
+    background-position: right top,
+                         left 610px,
+                         right bottom;
+    background-size: 15%,
+                     30%,
+                     40%;
 }
 
 article .m1{
