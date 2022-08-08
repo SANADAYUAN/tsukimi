@@ -1,0 +1,105 @@
+main{
+	padding-bottom: 30px;
+	background-image: url(../img/home/tree6.png);
+	background-repeat: no-repeat;
+	background-position: right 270px;
+}
+
+main h1{
+	font-size: 30px;
+	color: #171c38;
+	text-align: center;
+	padding-bottom: 30px;
+	letter-spacing: 3px;
+	position: relative;
+    margin-top: 50px;
+}
+
+main h1:before, h1:after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 100px;
+	background-color: #434343;
+	position: absolute;
+	top: 25px;
+}
+
+main h1:before{
+	left: 50%;
+	margin-left: -300px;
+}
+
+main h1:after{
+	right: 50%;
+	margin-right: -300px;
+}
+
+.a1{
+    width: 900px;
+    margin: 0 auto 50px;
+    display: flex;
+}
+
+.a1 img{
+    width: 50%;
+    padding-right: 20px;
+}
+
+.a1 p{
+    color: #434343;
+    align-self: center;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+
+/* RWD */
+@media screen and (max-width: 414px) {
+	main{
+		max-width: 414px;
+		width: 100%;
+		background-image: url(../img/home/tree6.png);
+		background-repeat: no-repeat;
+		background-size: 60%;
+		background-position: right 400px;
+		padding-bottom: 10px;
+	}
+	
+	main h1{
+		font-size: 20px;
+		padding-bottom: 20px;
+		margin-top: 20px;
+	}
+	
+	main h1:before, h1:after{
+		width: 100px;
+		top: 15px;
+	}
+	
+	main h1:before{
+		margin-left: -155px;
+	}
+	
+	main h1:after{
+		margin-right: -155px;
+	}
+	
+	.a1{
+		max-width: 414px;
+		width: 100%;
+		flex-direction: column;
+	}
+	
+	.a1 img{
+		margin: 0 auto 10px;
+		width: 80%;
+		padding-right: 0;
+	}
+	
+	.a1 p{
+		text-align: justify;
+		width: 80%;
+	}
+	
+}

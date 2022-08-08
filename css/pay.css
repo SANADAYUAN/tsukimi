@@ -1,0 +1,288 @@
+main{
+    padding: 50px 0;
+    background-image: url(../img/home/tree3.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 15%;
+}
+
+/* 購物車 */
+.item_header{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    height: 30px;
+    border-bottom: 1px solid #171c38;
+    padding-left: 10px;
+}
+.item_header div{
+    width: 150px;
+    color: #434343;
+    line-height: 30px;
+    font-size: 18px;
+}
+.item_header .item_detail{
+    width: 50%;
+}
+.item_body{
+    margin-top: 20px;
+    height: 100px;
+    align-items: center;
+    background-color: #fcfaf2;  
+}
+.item_detail img{
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+    float: left;
+}
+.item_detail .name{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.price span{
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.count{
+    display: flex;
+}
+
+.count .btn1{
+    margin-top: -1px;
+    margin-right: -65px;
+}
+
+.count .btn2{
+    margin-top: -1px;
+}
+
+.count span{
+    font-size: 16px;
+    border: 1px solid #171c38;
+    padding: 5px 6px;
+    background-color: #171c38;
+    color: #fcfaf2;
+    font-weight: bold;
+
+    /* 更換游標 */
+    cursor: pointer;
+
+    /* 取消反白 */
+    user-select: none;
+}
+
+.count input{
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #171c38;
+    border-radius: 0px;
+}
+
+.operate{
+    cursor: pointer;
+}
+
+/* 總金額 */
+.total{
+    width: 70%;
+    padding: 0 0 30px 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 22px;
+    color: #434343;
+    background-image: url(../img/home/tree4.png);
+    background-repeat: no-repeat;
+    background-size:40%;
+}
+
+.t1{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.freight{
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.total .t2::before{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 200px;
+    background-color: #434343;
+}
+
+.t2{
+    text-align: end;
+}
+
+/* 付款人資訊 */
+section{
+    width: 80%;
+    margin: 70px auto;
+    color: #434343;
+    display: flex;
+    justify-content: center;
+}
+
+section .pm{
+    padding-left: 250px;
+}
+
+section h2{
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+section .send ul{
+    padding-left: 25px;
+}
+
+section .pm ul{
+    padding-left: 50px;
+}
+
+section li{
+    padding-bottom: 10px;
+}
+
+section .send li input{
+    background-color: #ddd;
+    height: 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* 確認取消 */
+article{
+    display: flex;
+    justify-content: end;
+    padding: 50px 130px 50px 50px;
+    background-image: url(../img/home/mountain.png);
+    background-repeat: no-repeat;
+    background-size: 37%;
+}
+
+article input{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 20px;
+    border: none;
+    color: #fcfaf2;
+
+    /* 更換游標 */
+    cursor: pointer;
+}
+
+article input:first-child{
+    background-color: #434343;
+}
+
+article input:last-child{
+    background-color: #171c38;
+}
+
+@media screen and (max-width: 414px){
+    main{
+        max-width: 414px;
+        width: 100%;
+        padding: 50px 0;
+        background-size: 30%;
+    }
+    
+      /* 購物車 */
+      .item_header{
+        max-width: 414px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0px;
+    }
+
+    .item_header div{
+        width: 100px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .item_detail img{
+        display: none;
+    }
+
+    .item_detail .name{
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+
+    .price span{
+        margin-left: 5px;
+        margin-right: 25px;
+    }
+    
+    .count .btn1{
+        margin-top: 0px;
+        margin-right: 0px;
+        display: none;
+    }
+    
+    .count .btn2{
+        margin-top: 0px;
+        display: none;
+    }
+    
+    .count input{
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    /* 總金額 */
+    .total{
+        max-width: 414px;
+        width: 70%;
+        padding: 0 0 10px 95px;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 18px;
+        background-size: 50%;
+    }
+
+    /* 付款人資訊 */
+    section{
+        width: 80%;
+        margin: 70px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section .pm{
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+     /* 確認取消 */
+     article{
+        display: flex;
+        justify-content: center;
+        padding: 0px 0px 30px 0px;
+        background-image: none;
+    }
+
+    article input{
+        width: 100px;
+        height: 45px;
+        font-size: 16px;
+        border: none;
+    }
+}

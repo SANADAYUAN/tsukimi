@@ -1,0 +1,288 @@
+@import url('reset.css');
+body{
+    line-height: 1.8;
+    background-color: #fcfaf2;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    padding: 20px 0 0 20px;
+}
+
+.n1 a{
+    font-size: 24px;
+    color: #fcfaf2;
+    line-height: 109px;
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+}
+
+.login a{
+    line-height: 109px;
+    font-size: 24px;
+    padding: 0 15px 0 10px;
+    color: #fcfaf2;
+    text-decoration: none;
+}
+
+.hum{
+    display: none;
+}
+
+picture img{
+    width: 100%;
+    max-width: 1920px;
+    display: block;
+}
+
+section{
+    width: 100%;
+    max-width: 1920px;
+    background-image: url(../img/home/main_bg.png);
+    height: 596px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+section .title{
+    writing-mode: vertical-lr;
+    padding-top: 40px;
+    padding-left: 30px;
+    color: #fcfaf2;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 5px;
+}
+
+section .title h2{
+    padding-top: 30px;
+}
+
+section .title h3{
+    padding-top: 60px;
+}
+
+article{
+    width: 100%;
+    max-width: 1920px;
+}
+
+article .m1{
+    display: flex;
+    justify-content: space-between;
+}
+
+article img{
+    display: block;
+    width: 50%;
+}
+
+article span{
+    margin: 0 auto;
+    line-height: 383px;
+    font-size: 24px;
+}
+
+footer{
+    width: 100%;
+    background-color: #1c1c1c;
+    display: flex;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    padding: 30px 0 30px 50px;
+}
+
+footer .add{
+    color: #fcfaf2;
+    align-self: center;
+    flex-shrink: 0;
+    padding-left: 100px;
+    font-size: 18px;
+}
+
+footer .n2{
+    align-self: center;
+    margin-left: -350px;
+    flex-shrink: 0;
+}
+
+footer a{
+    color: #fcfaf2;
+    text-decoration: none;
+    padding-right: 20px;
+    font-size: 18px;
+    justify-content: center;
+}
+
+footer .n3{
+    color: #fcfaf2;
+    font-size: 12px;
+    align-self: flex-end;
+    flex-shrink: 0;
+}
+
+.n3 a{
+    font-size: 12px;
+}
+
+/* 警告 */
+.nt{
+    width: 100%;
+    background-color: #d9d9d9;
+    font-size: 30px;
+    color: #fcfaf2;
+    text-align: center;
+    opacity: .1;
+}
+
+.notice{
+    width: 100%;
+    background-color: #d9d9d9;
+    opacity: .5;
+    position: fixed;
+    bottom: 0;
+    font-size: 30px;
+    text-align: center;
+    z-index: 1;
+}
+
+@media screen and (max-width: 414px){
+    .wrapper{
+        max-width: 414px;
+        width: 100%;
+    }
+    nav{
+        max-width: 414px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    
+    nav .logo img{
+        width: 50px;
+        height: 50px;
+        padding: 10px 0 0 10px;
+    }
+    
+    .n0{
+        display: none;
+    }
+    
+    .n1{
+        max-width: 414px;
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 45px;
+        left: 0;
+        background-color: rgba(23,28,56,.3) ;
+        text-align: center;
+        z-index: 99;
+    }
+    
+    nav .n1 a{
+        font-size: 18px;
+        color: #fcfaf2;
+        line-height: 80px;
+        text-decoration: none;
+        padding: 0 0px 0 0px;
+    }
+    
+    .hum{
+        display:block;
+        float: right;
+        margin: 15px;
+        font-size:20px;
+    }
+    
+    .hum a{
+        color: #fcfaf2;
+    }
+
+    nav .login{
+        position: absolute;
+        top: 20px;
+        right: 50px;
+    }
+
+    .login a{
+        line-height: 0px;
+        font-size: 18px;
+        padding: 0 10px 0 0px;
+        margin: 0 auto;
+        font-weight: bold;
+    }
+
+    section{
+        display: none;
+    }
+    
+    article{
+        display: none;
+    }
+
+    /* 頁尾 */
+    footer{
+        max-width: 414px;
+        width: 100%;
+        height: 160px;
+        display: block;
+        }
+
+    footer img{
+        display: none;
+        }
+
+    footer .add{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        text-align: center;
+        font-size: 16px;
+        }
+
+    footer .n2{
+        display: none;
+    }
+
+    footer a{
+        padding-right: 0px;
+        justify-content: center;
+        }
+
+    footer .n3{
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .nt{
+        display: none;
+    }
+    
+    .notice{
+        display: none;
+    }
+}

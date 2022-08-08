@@ -1,0 +1,162 @@
+main{
+    padding-bottom: 30px;
+    background-image: url(../img/home/tree5.png),
+                      url(../img/home/tree6.png);
+    background-repeat: no-repeat;
+    background-position: left top,
+                         right 300px;
+    background-size: 20%,
+                     35%;
+}
+
+main h1{
+	font-size: 36px;
+	color: #171c38;
+	text-align: center;
+	padding-bottom: 30px;
+	letter-spacing: 3px;
+	position: relative;
+    margin-top: 50px;
+}
+
+main h1:before, h1:after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 100px;
+	background-color: #434343;
+	position: absolute;
+	top: 30px;
+}
+
+main h1:before{
+	left: 50%;
+	margin-left: -300px;
+}
+
+main h1:after{
+	right: 50%;
+	margin-right: -300px;
+}
+
+section{
+    width: 900px;
+    margin: 0 auto 50px;
+    display: flex;
+}
+
+section img{
+    width: 50%;
+    display: block;
+    padding-right: 30px;
+}
+
+.acc{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #ddd;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.in h3{
+    font-size: 18px;
+}
+
+.in .f1 a{
+    font-size: 12px;
+    color: #434343;
+    text-decoration: none;
+    display: block;
+    margin-left: 144px;
+}
+
+.btn .btn1{
+    font-size: 16px;
+    background-color: #ddd;
+    border: none;
+    margin-top: 15px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 414px){
+    
+    main{
+        padding-bottom: 30px;
+        background-repeat: no-repeat;
+        background-position: left top,
+                             right 250px;
+        background-size: 30%,
+                         50%;
+        /* background-image: none; */
+    }
+
+    main h1{
+        font-size: 20px;
+		color: #171c38;
+		text-align: center;
+		padding-bottom: 20px;
+		letter-spacing: 3px;
+		position: relative;
+		margin-top: 20px;
+    }
+
+    main h1:before, h1:after{
+		content: '';
+		display: block;
+		height: 1px;
+		width: 100px;
+		background-color: #434343;
+		position: absolute;
+		top: 15px;
+	}
+	
+	main h1:before{
+		left: 50%;
+		margin-left: -150px;
+	}
+	
+	main h1:after{
+		right: 50%;
+		margin-right: -150px;
+	}
+
+    section{
+        max-width: 414px;
+        width: 100%;
+    }
+
+    section img{
+        display: none;
+    }
+
+    .in{
+        margin: 0 auto;
+    }
+
+    .in h3{
+        font-size: 18px;
+    }
+    
+    .in .f1 a{
+        font-size: 12px;
+        color: #434343;
+        text-decoration: none;
+        display: block;
+        margin-left: 144px;
+    }
+    
+    .btn .btn1{
+        font-size: 16px;
+        background-color: #ddd;
+        border: none;
+        margin-top: 15px;
+        margin-right: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+}

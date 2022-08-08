@@ -1,0 +1,187 @@
+main{
+	text-align: center;
+	background-image: url(../img/home/tree4.png),
+					  url(../img/home/moon.png);
+	background-repeat: no-repeat;
+	background-position: left 127px,
+						 right -7px;
+	background-size: 30%,
+					 13%;
+}
+.title h1{
+    font-size: 30px;
+	color: #171c38;
+	padding-bottom: 30px;
+	letter-spacing: 3px;
+	position: relative;
+    margin-top: 50px;
+}
+
+.title h1:before, h1:after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 100px;
+	background-color: #434343;
+	position: absolute;
+	top: 25px;
+}
+
+.title h1:before{
+	left: 50%;
+	margin-left: -300px;
+}
+
+.title h1:after{
+	right: 50%;
+	margin-right: -300px;
+}
+
+.sip{
+	color: #434343;
+    font-size: 18px;
+	letter-spacing: 1px;
+	line-height: 2;
+}
+
+.sl{
+	padding: 20px 0;
+}
+
+.sl a{
+	text-decoration: none;
+	color: #171c38;
+}
+
+section{
+	padding-bottom: 50px;
+	background-image: url(../img/home/bg1.png),
+					  url(../img/home/mountain.png);
+	background-repeat: no-repeat;
+	background-position: right top,
+						 left bottom;
+	background-size: 35%,
+	             	 40%;
+}
+
+section h2{
+	font-size: 25px;
+	color: #171c38;
+	margin: 70px 0 -50px 140px;
+}
+
+
+.recommend{
+	margin: 50px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.recommend .goods{
+	width: 200px;
+	border: 1px solid #434343;
+	margin: 15px 15px 0;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.goods img{
+	width: 100%
+}
+
+.goods p{
+	text-align: center;
+}
+
+.goods a{
+    color: #434343;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.goods .price{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.goods .normal{
+	color: #434343;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.goods input{
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	background-color: #171c38;
+	color: #fcfaf2;
+	border: none;
+} 
+
+
+
+@media screen and (max-width:414px) {
+	main{
+		max-width: 414px;
+		width: 100%;
+	}
+
+	.title h1{
+		font-size: 22px;
+		padding-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.title h1:before, h1:after{
+		width: 100px;
+		top: 18px;
+	}
+
+	.title h1:before{
+		margin-left: -155px;
+	}
+
+	.title h1:after{
+		margin-right: -155px;
+	}
+
+	.sip{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 16px;
+		line-height: 2;
+	}
+
+	section{
+        padding-bottom: 50px;
+    }
+    
+    section h2{
+        font-size: 24px;
+        color: #171c38;
+        margin: 0px 0px 0px 15px;
+    }
+
+    .recommend{
+        margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .recommend .goods{
+        width: 140px;
+        margin: 15px 10px;
+        padding: 12px;
+    }
+
+    .goods input{
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+    }
+}

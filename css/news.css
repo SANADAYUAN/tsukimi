@@ -1,0 +1,191 @@
+section img{
+	width: 100%;
+	max-width: 1920px;
+	display: block;
+}
+
+main{
+	padding-bottom: 50px;
+    background-image: url(../img/home/moon.png),
+                      url(../img/home/mountain.png),
+                      url(../img/home/tree3.png);
+    background-repeat: no-repeat;
+    background-position: left top,
+                         left bottom,
+                         right center;
+	background-size: 15%,
+					 40%,
+					 30%;
+}
+
+main h1{
+	font-size: 30px;
+	color: #171c38;
+	text-align: center;
+	padding-bottom: 30px;
+	letter-spacing: 3px;
+	position: relative;
+    margin-top: 50px;
+}
+
+main h1:before, h1:after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 100px;
+	background-color: #434343;
+	position: absolute;
+	top: 25px;
+}
+
+main h1:before{
+	left: 50%;
+	margin-left: -300px;
+}
+
+main h1:after{
+	right: 50%;
+	margin-right: -300px;
+}
+
+.box{
+	width: 850px;
+	padding: 20px;
+	/* background-color: #fffffb; */
+	border: 1px solid #ddd;
+	margin: 0 auto 30px auto;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+}
+
+.box img{
+	display: block;
+	margin-right: 20px;
+	float: left;
+    width: 200px;
+}
+
+.box h2{
+	font-size: 25px;
+	padding-bottom: 10px;
+	color: #171c38;
+}
+
+.box p{
+	font-size: 16px;
+	line-height: 1.6;
+	color: #434343;
+	margin-bottom: 20px;
+}
+
+.transition{
+	transition-property: all;
+	transition-duration: .5s;
+}
+
+.transition:hover{
+	border-color: #999;
+	/* background-color: #fffffb; */
+	box-shadow: 2px 3px 2px rgba(0,0,0,.2);
+}
+
+
+
+/*---------- 頁碼 ----------*/
+ul.page{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+ul.page li{
+    display: inline;
+}
+
+ul.page li a {
+    color: #171c38;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+ul.page li a.active {
+    background-color: #171c38;
+    color: #fcfaf2;
+}
+
+ul.page li:hover:not(.active){
+    background-color: #ddd;
+}
+
+
+@media screen and (max-width: 414px) {
+	section img{
+		width: 100%;
+		max-width: 414px;
+		display: block;
+	}
+
+	main{
+		background-image: none;
+	}
+
+	main h1{
+		font-size: 22px;
+		padding-bottom: 20px;
+		margin-top: 20px;
+	}
+	
+	main h1:before, h1:after{
+		width: 80px;
+		top: 18px;
+	}
+	
+	main h1:before{
+		margin-left: -155px;
+	}
+	
+	main h1:after{
+		margin-right: -155px;
+	}
+
+	.box{
+		width: 90%;
+		max-width: 414px;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.box img{
+		display: block;
+		margin: 0 auto 5px;
+		float: left;
+		width: 300px;
+	}
+
+	.box h2{
+		font-size: 22px;
+		margin: 0 auto;
+		padding-bottom: 1px;
+	}
+
+	.box h3{
+		margin-left: 10px;
+	}
+
+	.box p{
+		width: 300px;
+		font-size: 16px;
+		text-align: justify;
+		line-height: 1.6;
+		color: #434343;
+		margin:0 auto 20px;
+	}
+
+	ul.page{
+		display: none;
+	}
+}

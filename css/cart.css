@@ -1,0 +1,273 @@
+main{
+    padding: 50px 0;
+}
+
+.item_header{
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    height: 30px;
+    border-bottom: 1px solid #171c38;
+    padding-left: 10px;
+}
+.item_header div{
+    width: 150px;
+    color: #434343;
+    line-height: 30px;
+    font-size: 18px;
+}
+.item_header .item_detail{
+    width: 50%;
+}
+.item_body{
+    margin-top: 20px;
+    height: 100px;
+    align-items: center;
+    background-color: #fcfaf2;  
+}
+.item_detail img{
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+    float: left;
+}
+.item_detail .name{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.price span{
+    margin-left: 20px;
+    margin-right: 25px;
+}
+
+.count{
+    display: flex;
+}
+
+.count .btn1{
+    margin-top: -1px;
+    margin-right: -65px;
+}
+
+.count .btn2{
+    margin-top: -1px;
+}
+
+.count span{
+    font-size: 16px;
+    border: 1px solid #171c38;
+    padding: 5px 6px;
+    background-color: #171c38;
+    color: #fcfaf2;
+    font-weight: bold;
+
+    /* 更換游標 */
+    cursor: pointer;
+
+    /* 取消反白 */
+    user-select: none;
+}
+
+.count input{
+    width: 35px;
+    height: 25px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #171c38;
+    border-radius: 0px;
+}
+
+.operate{
+    cursor: pointer;
+}
+
+article{
+    display: flex;
+    justify-content: end;
+    margin: 50px 130px 50px 50px;
+}
+
+article input{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 20px;
+    border: none;
+    color: #fcfaf2;
+    /* 更換游標 */
+    cursor: pointer;
+}
+
+article input:first-child{
+    background-color: #434343;
+}
+
+article input:last-child{
+    background-color: #171c38;
+}
+
+section{
+	padding-bottom: 50px;
+	background-image: url(../img/home/bg1.png),
+					  url(../img/home/mountain.png);
+	background-repeat: no-repeat;
+	background-position: right top,
+						 left bottom;
+	background-size: 35%,
+	             	 40%;
+}
+
+section h2{
+	font-size: 25px;
+	color: #171c38;
+	margin: 70px 0 -50px 140px;
+}
+
+
+.recommend{
+	margin: 50px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.recommend .goods{
+	width: 200px;
+	border: 1px solid #434343;
+	margin: 15px 15px 0;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.goods img{
+	width: 100%
+}
+
+.goods p{
+	text-align: center;
+}
+
+.goods a{
+    color: #434343;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.goods .price{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.goods .normal{
+	color: #434343;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.goods input{
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	background-color: #171c38;
+	color: #fcfaf2;
+	border: none;
+} 
+
+
+@media screen and (max-width:414px) {
+    main{
+        padding: 50px 0;
+        max-width: 414px;
+        width: 100%;
+        max-width: 414px;
+    }
+
+    /* 購物車 */
+    .item_header{
+        max-width: 414px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 0px;
+    }
+
+    .item_header div{
+        width: 100px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .item_detail img{
+        display: none;
+    }
+
+    .item_detail .name{
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    
+    .price span{
+        margin-left: 5px;
+        margin-right: 25px;
+    }
+    
+    .count .btn1{
+        margin-top: 0px;
+        margin-right: 0px;
+        display: none;
+    }
+    
+    .count .btn2{
+        margin-top: 0px;
+        display: none;
+    }
+    
+    .count input{
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    article{
+        justify-content: center;
+        margin: 0 auto 30px;
+    }
+    
+    article input{
+        height: 50px;
+        font-size: 16px;
+        margin: 0 10px 0 10px;
+    }
+
+    section{
+        padding-bottom: 50px;
+    }
+    
+    section h2{
+        font-size: 24px;
+        color: #171c38;
+        margin: 0px 0px 0px 15px;
+    }
+
+    .recommend{
+        margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .recommend .goods{
+        width: 140px;
+        margin: 15px 10px;
+        padding: 12px;
+    }
+
+    .goods input{
+        width: 120px;
+        height: 30px;
+        font-size: 16px;
+    }
+}

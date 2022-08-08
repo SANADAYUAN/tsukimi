@@ -1,0 +1,121 @@
+section{
+    background-image: url(../img/home/moon.png),
+                      url(../img/home/mountain.png);
+    background-repeat: no-repeat;
+    background-position: right -5px,
+                         left bottom;
+    background-size: 15%,
+                     40%;
+}
+
+section h1{
+	font-size: 36px;
+	color: #171c38;
+	text-align: center;
+	padding-bottom: 30px;
+	letter-spacing: 3px;
+	position: relative;
+    margin-top: 50px;
+}
+
+section h1:before, h1:after{
+	content: '';
+	display: block;
+	height: 1px;
+	width: 100px;
+	background-color: #434343;
+	position: absolute;
+	top: 30px;
+}
+
+section h1:before{
+	left: 50%;
+	margin-left: -300px;
+}
+
+section h1:after{
+	right: 50%;
+	margin-right: -300px;
+}
+
+main form{
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main h3{
+    font-size: 20px;
+    color: #434343;
+    margin-bottom: -5px;
+}
+
+main input{
+    margin-bottom: 30px;
+    background-color: #ddd;
+    border: none;
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.btn{
+    text-align: center;
+    margin-bottom: 100px;
+  }
+.btn input{
+    width: 50px;
+    height: 30px;
+    background-color: #171c38;
+    color: #fcfaf2;
+    border-radius: 5px;
+    border: none;
+}
+
+@media screen and (max-width:414px){
+    section{
+        max-width: 414px;
+        width: 100%;
+        background-image: none,none,
+                          url(../img/home/tree5.png),
+                          url(../img/home/tree6.png);
+        background-repeat: no-repeat;
+        background-position: left -5px,
+                             right 380px;
+        background-size: 30%,
+                         70%;
+    }
+    
+    section h1{
+        font-size: 22px;
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    section h1:before, h1:after{
+        width: 80px;
+        top: 18px;
+    }
+
+    section h1:before{
+        left: 50%;
+        margin-left: -155px;
+    }
+    
+    section h1:after{
+        right: 50%;
+        margin-right: -155px;
+    }
+
+    main form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main h3{
+        font-size: 16px;
+    }
+}

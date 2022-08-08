@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>月見日本酒專門店</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/hf.css">
+    <link rel="stylesheet" href="./css/pay.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="./index.html"><img src="./img/home/logo2.png" alt=""></a>
+                </div>
+                
+                <div class="n0">
+                    <div class="n1">
+                        <a href="./news.html">最新消息</a>
+                        <a href="./shop.html">線上商店</a>
+                        <a href="./s-introduce.html">酒造介紹</a>
+                        <a href="./about.html">關於我們</a>
+                    </div>
+                </div>
+
+                <div class="login">
+                    <a href="./login.html">登入</a>
+                    <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+
+                漢堡線
+                <div class="hum">
+                    <a href="#" id="showMenu"><i class="fas fa-bars"></i></a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+
+            <!-- 購物車 -->
+            <div class="container">
+                <div class="item_header">
+                    <div class="item_detail">商品</div>
+                    <div class="price">單價</div>
+                    <div class="count">數量</div> 
+                    <div class="amount">小計</div>
+                    <div class="operate"></div>
+                </div>
+
+                <div class="item_header item_body">
+                    <div class="item_detail">
+                        <img src="./img/shop/goods1.jpg" alt="">
+                        <div class="name">獺祭 梅酒</div>
+                    </div>
+
+                    <div class="price"><span>1500</span></div>
+
+                    <div class="count">
+                        <div class="btn1">
+                            <span class="subtract" id="subtract">–</span>
+                        </div>
+    
+                        <input type="text" class="input_num" id="input_num" value="1">
+    
+                        <div class="btn2">
+                            <span class="plus" id="plus">+</span>
+                        </div>
+                    </div> 
+
+                    <div class="amount">1500</div>
+
+                    <div class="operate">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- 總金額 -->
+        <div class="total">
+            <div class="t1">
+                <h3>總金額</h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <span>1500</span>
+            </div>
+            <div class="freight">
+                <h3>運費</h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <span>100</span>
+            </div>
+            <div class="t2"><span>1600</span></div>
+        </div>
+
+        <!-- 資訊 -->
+        <section>
+            <div class="send">
+                <h2>寄送資訊</h2>
+                <ul>
+                    <ul>
+                        <li>
+                            <p>收件人姓名: </p>
+                            <input type="text">
+                        </li>
+
+                        <li>
+                            <p>收件地址: </p>
+                            <input type="text">
+                        </li>
+                        
+                        <li>
+                            <p>連絡電話: </p>
+                            <input type="text">
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="pm">
+                <h2>付款方式</h2>
+                <ul>
+                    <li><input type="radio" name="pm">ATM轉帳</li>
+                    <li><input type="radio" name="pm">線上刷卡</li>
+                    <li><input type="radio" name="pm" value="">貨到付款</li>
+                </ul>
+            </div>
+        </section>
+
+
+        <!-- 確認取消 -->
+        <article>
+            <input type="submit" value="取消" onclick="location.href = './cart.html'">
+            <input type="submit" value="確認" onclick="location.href = './check.html'">
+        </article>
+
+
+        <!-- 頁尾 -->
+        <footer>
+            <div class="lo2">
+                <img src="./img/home/logo2.png" alt="">
+            </div>
+
+            <div class="add">
+                <h3>
+                    地址: 105 臺北市松山區健康路15號
+                    <br>電話: 02-2558-5644
+                    <br>週一至週五 09:00～18:00
+                </h3>
+            </div>
+
+            <div class="n3">
+                <p>
+                    本網站為緯育TibaMe前端工程師班第78期學員專題作品，本平台僅供學習、展示之用。
+                    <a href="https://docs.google.com/document/d/1ecVYumWczT8-3tI8R1Fu2CpRk-bO6hJc/edit">參考資料</a>
+                </p>
+            </div>
+
+            <div class="n2">
+                <a href="./news.html">最新消息</a>
+                <a href="./shop.html">線上商店</a>
+                <a href="./s-introduce.html">酒造介紹</a>
+                <a href="./about.html">關於我們</a>
+            </div>
+        </footer>
+        <div class="nt">
+            <p>禁止酒駕 飲酒過量 有害健康 未滿18歲請勿飲酒</p>
+        </div>
+        <div class="notice">
+            <p>禁止酒駕 飲酒過量 有害健康 未滿18歲請勿飲酒</p>
+        </div>
+
+    <script src="./js/hf.js"></script>
+    <script src="./js/quantity.js"></script>
+</body>
+</html>
