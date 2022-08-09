@@ -10,4 +10,3 @@ var a = document.getElementById('showMenu');
                 b.style.display = 'none';
             }
         });
-
